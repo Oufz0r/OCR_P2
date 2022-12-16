@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Booki</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/f56a26aebc.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Un super titre!</h1>
+    
+    <main>
+
+        <header>
+            <div id="logo"><img src="images/logo/Booki.png" alt="logo Booki"></div>
+            <nav>
+                <menu>
+                    <li>
+                        <a href="#">
+                            <div class="blue-bar"></div>Hébergements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="blue-bar"></div>Activités
+                        </a>
+                    </li>
+                </menu>
+            </nav>
+        </header>
+
+    <section class="col">
+        <div id="recherche">
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            
+            <form action="#" method="get">
+                <div id="recherche-form">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" value="Marseille, France">
+                    <input type="submit" value="Rechercher" class="bg-blue">
+                </div>
+            </form>
+        </div>
+
+        <div id="filtres">
+            <p>Filtres</p>
+                <!-- <div class="input-icons"> -->
+                    <div class="btn">
+                        <i class="fa-solid fa-money-bill-wave icon"></i>
+                        <input type="submit" class="input-field" value="Économique">
+                    </div>
+                    <div class="btn">
+                        <i class="fa-solid fa-person icon"></i>
+                        <input type="submit" class="input-field" value="Familial">
+                    </div>
+                    <div class="btn">
+                        <i class="fa-solid fa-heart icon"></i>
+                        <input type="submit" class="input-field" value="Romantique">
+                    </div>
+                    <div class="btn">
+                        <i class="fa-solid fa-dog icon"></i>
+                        <input type="submit" class="input-field" value="Animaux autorisés">
+                    </div>
+                <!-- </div> -->
+        </div>
+
+        <div class="infos">
+            <div class="info-icon"><i class="fa-solid fa-info"></i></div>
+            <div class="info-text">Plus de 500 logements sont disponibles dans cette ville</div>
+        </div>
+    </section>
+
+
+    <section class="row heb-pop">
+        <div class="hebergements bg-grey">
+            <h2>Hébergements à Marseille</h2>
+            <div class="row">
+                <div>ONE</div>
+                <div>TWO</div>
+                <div>THREE</div>
+            </div>
+            <div class="row">
+                <div>ONE</div>
+                <div>TWO</div>
+                <div>THREE</div>
+            </div>
+        </div>
+
+        <div class="populaires bg-grey">
+            <h2>les plus populaires</h2>
+            <div class="col">
+                <div>ONE</div>
+                <div>TWO</div>
+                <div>THREE</div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
 </body>
 </html>
