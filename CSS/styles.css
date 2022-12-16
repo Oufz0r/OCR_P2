@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 body {
-    /* width: 100%; */
-    /* margin: 40px; */
+    display: flex;
+    justify-content: center;
     font-family: 'Raleway', sans-serif;
 }
 
 main {
     padding: 44px 55px 55px 55px;
+    width: 1400px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     /* width: 95%; */
-    height: 100px;
+    height: 80px;
 }
 
 .col {
@@ -80,7 +81,9 @@ menu a:hover .blue-bar {
 
 
 
-
+#recherche {
+    margin: 0;
+}
 
 
 #recherche h1 {
@@ -201,7 +204,7 @@ input {box-sizing: border-box;}
     border-color: #D9D9D9;
     border-style: solid;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -246,24 +249,43 @@ input {box-sizing: border-box;}
 
 
 .heb-pop {
-    display: flex;
-    background: red;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .hebergements {
-    width: 500px;
+    width: 810px;
     border-radius: 15px;
-    /* margin-right: 50px; */
-    flex: 2;
+    padding: 40px;
 }
 
 .populaires {
-    width: 40%;
+    width: 380px;
     border-radius: 15px;
-    flex: 1;
+    padding: 40px;
 }
 
 .hebergements h2 {
     font-size: 22px;
     font-weight: 700;
+}
+
+
+
+.cartes-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.cartes {
+    width: 246px;
+    height: 199px;
+    background: white;
+    border-radius: 15px;
+}
+
+.cartes-bg {
+    background-image: url("../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
