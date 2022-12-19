@@ -836,7 +836,7 @@ footer div {
 
     #filtres form {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     #filtres button {
@@ -980,7 +980,7 @@ footer div {
 
     .activites-box .activites-img-vertical {
         transform: scale(1.00);
-        object-position: 0px -200px;
+        object-position: 0px -150px;
         /* object-position: left top; */
     }
 
