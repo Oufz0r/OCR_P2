@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
+html {
+    display: inline-block;
+}
+
 body {
-    display: flex;
-    justify-content: center;
+    display: block;
     font-family: 'Raleway', sans-serif;
-    margin: 0px;
+    margin: 0 auto;
+    width: 1400px;
+    padding: 44px 55px 0px 55px;
 }
 
 a {
@@ -13,14 +18,14 @@ a {
 }
 
 main {
-    padding: 44px 55px 0px 55px;
-    width: 1400px;
+    width: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     height: 80px;
+    width: 100%;
 }
 
 .col {
@@ -112,7 +117,7 @@ menu a:hover .blue-bar {
     height: 50px;
 }
 
-#recherche-form i {
+#recherche-form .icon-gps {
     display: flex;
     width: 50px;
     justify-content: center;
@@ -131,7 +136,7 @@ menu a:hover .blue-bar {
     width: 230px;
 }
 
-#recherche-form input[type=submit] {
+#recherche-form button[type=submit] {
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -139,6 +144,10 @@ menu a:hover .blue-bar {
     background: #0065FC;
     padding: 14px 16px 14px 16px;
     border-radius: 0px 15px 15px 0px;
+}
+
+#recherche .cherch-loupe {
+    display: none;
 }
 
 
@@ -172,12 +181,8 @@ menu a:hover .blue-bar {
     font-size: 18px;
 }
 
-/* Gestion des icones dans les inputs */
-#filtres .btn {
-    margin-left: 50px;
-    border-radius: 60px;
-}
-  
+/* Gestion des Boutons Filtres */
+
 .icon {
     color: #0065FC;
     font-size: 20px;
@@ -193,6 +198,7 @@ menu a:hover .blue-bar {
     font-size: 17px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
+    margin-left: 50px;
 }
 
 #filtres button:hover {
@@ -236,6 +242,8 @@ menu a:hover .blue-bar {
 
 
 .heb-pop {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
@@ -244,17 +252,14 @@ menu a:hover .blue-bar {
     width: 840px;
     border-radius: 20px;
     padding: 40px 40px 20px 40px;
+    background: #F2F2F2;
 }
 
-.populaires {
+.sec-populaires {
     width: 340px;
     border-radius: 20px;
     padding: 40px 40px 0px 40px;
-}
-
-.space-vertical {
-    height: 85%;
-    justify-content: space-between;
+    background: #F2F2F2;
 }
 
 .sec-hebergements h2 {
@@ -318,6 +323,7 @@ menu a:hover .blue-bar {
     width: auto;
     height: auto;
     padding-left: 10px;
+    background: white;
 }
 
 .cartes-desc h3 {
@@ -370,6 +376,13 @@ menu a:hover .blue-bar {
 
 
 /* Cartes horizontales*/
+.space-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: space-between;
+}
+
 .cartes-horiz {
     height: 135px;
     background: white;
@@ -410,6 +423,7 @@ menu a:hover .blue-bar {
     width: 169px;
     height: auto;
     padding: 0px 15px 0px 15px;
+    background: white;
 }
 
 .cartes-desc-horiz h3 {
@@ -459,15 +473,15 @@ menu a:hover .blue-bar {
 .activites-bg {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
 .activites-name {
     padding: 20px;
     font-size: 16px;
     font-weight: 700;
+    background: white;
 }
 
 .activites-box img {
@@ -488,9 +502,12 @@ menu a:hover .blue-bar {
     justify-content: center;
     margin-top: 60px;
     bottom: 0px;
+    width: 100%;
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
     width: 1339px;
     background: #F2F2F2;
     justify-content: space-between;
@@ -507,4 +524,476 @@ footer h3 {
 
 footer div {
     width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VERSION TABLETTE */
+@media (max-width: 991px) {
+    html {
+        height: auto;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        display: block;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .blue-bar {
+        display: none;
+    }
+
+
+
+
+    .icon {
+        color: #0065FC;
+        font-size: 20px;
+    }
+    
+    #filtres button {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .heb-pop {
+        flex-direction: column;
+    }
+
+    .sec-hebergements {
+        min-width: 0;
+        width: auto;
+    }
+
+    .sec-populaires {
+        min-width: 0;
+        width: auto;
+        margin-top: 50px;
+    }
+
+
+
+    .cartes-box {
+        justify-content: space-between;
+    }
+
+    .cartes {
+        width: 206px;
+    }
+
+
+
+
+
+    .space-vertical {
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .cartes-horiz {
+        height: 135px;
+        background: white;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: #D9D9D9 3px 3px 10px 2px;
+    }
+
+    .cartes-bg-horiz {
+        width: 90px;
+    }
+
+    .cartes-bg-horiz-imgvertic {
+        width: 90px;
+    }
+
+    .cartes-bg-horiz-imgvertic img {
+        transform: scale(1.15);
+    }
+
+    .cartes-desc-horiz {
+        width: 125px;
+        padding: 0px 0px 0px 8px;
+    }
+
+    .cartes-desc-horiz p {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+
+
+
+    .sec-activites {
+        width: 100%;
+    }
+
+    .activites-box {
+        width: 180px;
+        height: 270px;
+    }
+
+    .activites-box img {
+        object-position: 0px 10px;
+        transform: scale(1.15);
+    }
+
+    .activites-box .activites-img-vertical {
+        transform: scale(1.30);
+    }
+
+
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VERSION MOBILE */
+@media (max-width: 767px) {
+
+    html {
+        height: auto;
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        min-width: 0;
+        margin: 0 0 20px 0;
+        padding: 20px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        min-width: 0;
+        justify-content: space-around;
+    }
+    
+    menu li {
+        width: 100%;
+        margin: 0px;
+        /* text-align: center; */
+    }
+    
+    .blue-bar {
+        display: flex;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: auto;
+        bottom: -45px;
+        background: #F2F2F2;
+        width: 100%;
+        height: 3px;
+        opacity: 1;
+    }
+
+    menu a:hover .blue-bar {
+        background: #0065FC;
+    }
+
+
+
+
+    #recherche-form .icon-gps {
+        display: flex;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+        background: #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+        font-size: 20px;
+    }
+
+    #recherche-form input[type=text] {
+        width: 100%;
+    }
+
+    #recherche-form button[type=submit] {
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        border: solid 1px #0065FC;
+        background: #0065FC;
+        padding: 14px 16px 14px 16px;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+    #recherche .cherch-txt {
+        display: none;
+    }
+
+    #recherche .cherch-loupe {
+        display: inline;
+    }
+
+
+    main {
+        width: 100%;
+        min-width: 0;
+        /* padding: 10px; */
+    }
+
+    article {
+        padding: 20px;
+    }
+
+
+
+
+
+    .icon {
+        color: #0065FC;
+        font-size: 20px;
+    }
+
+    #filtres {
+        flex-wrap: wrap;
+    }
+
+    #filtres form {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #filtres button {
+        display: flex;
+        font-size: 11px;
+        width: 155px;
+        padding: 10px 0px 10px 10px;
+        align-items: center;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .infos {
+        display: flex;
+        align-items: flex-start;
+        font-size: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .info-icon {
+        width: 35px;
+        height: 25px;
+        border-radius: 60px;
+        margin-right: 5px;
+    }
+    
+
+    .heb-pop {
+        flex-direction: column;
+    }
+
+    .sec-hebergements {
+        min-width: 0;
+        width: auto;
+        border-radius: 0;
+        background: white;
+        order: 2;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .sec-hebergements .cartes-box {
+        margin: 0;
+    }
+
+    .sec-hebergements .more {
+        display:none;
+    }
+
+    .sec-populaires {
+        min-width: 0;
+        width: auto;
+        margin-top: 0;
+        border-radius: 0;
+        padding: 20px;
+        order: 1;
+    }
+
+
+
+    .cartes-box {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .cartes {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+    .space-vertical {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .cartes-horiz {
+        height: 135px;
+        background: white;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: #D9D9D9 3px 3px 10px 2px;
+        margin-bottom: 10px;
+    }
+
+    .cartes-bg-horiz {
+        width: 117px;
+    }
+
+    .cartes-bg-horiz-imgvertic {
+        width: 117px;
+    }
+
+    .cartes-bg-horiz-imgvertic img {
+        transform: scale(1.15);
+    }
+
+    .cartes-desc-horiz {
+        width: 55%;
+        padding: 0px 0px 0px 8px;
+    }
+
+    .cartes-desc-horiz p {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+
+
+    .activites-titre {
+        margin: 50px 0px 10px 0px;
+        width: 50%;
+    }
+
+    .sec-activites {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .activites-box {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 20px;
+    }
+
+    .activites-bg {
+        display: inline-block;
+    }
+
+    .activites-box img {
+        object-position: 0px -25px;
+        transform: scale(1);
+        width: 100%;
+        height: auto;
+    }
+
+    .activites-box .activites-img-vertical {
+        transform: scale(1.00);
+        object-position: 0px -200px;
+        /* object-position: left top; */
+    }
+
+
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 }
