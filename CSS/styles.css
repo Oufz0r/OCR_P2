@@ -153,22 +153,6 @@ menu a:hover .blue-bar {
 
 
 
-
-
-.bg-blue {
-    background: #0065FC;
-}
-
-.bg-grey {
-    background: #F2F2F2;
-}
-
-
-
-
-
-
-
 #filtres {
     display: flex;
     align-items: center;
@@ -389,7 +373,6 @@ menu a:hover .blue-bar {
     border-radius: 20px;
     padding: 5px;
     box-shadow: #D9D9D9 3px 3px 10px 2px;
-    /* margin-bottom: 50px; */
 }
 
 .cartes-bg-horiz {
@@ -716,17 +699,13 @@ footer div {
     }
 
     body {
-        display: block;
         flex-direction: column;
         width: 100%;
         min-width: 0;
-        height: auto;
-        margin: 0 auto;
         padding: 0;
     }
 
     header {
-        width: 100%;
         min-width: 0;
         margin: 0 0 20px 0;
         padding: 20px 0 0 0;
@@ -744,9 +723,6 @@ footer div {
     menu {
         margin: 0;
         padding: 0;
-        list-style-type: none;
-        font-size: 16px;
-        font-weight: 500;
         width: 100%;
         min-width: 0;
         justify-content: space-around;
@@ -755,7 +731,6 @@ footer div {
     menu li {
         width: 100%;
         margin: 0px;
-        /* text-align: center; */
     }
     
     .blue-bar {
@@ -779,27 +754,11 @@ footer div {
 
 
     #recherche-form .icon-gps {
-        display: flex;
         width: 80px;
-        justify-content: center;
-        align-items: center;
-        background: #F2F2F2;
-        border-radius: 15px 0px 0px 15px;
-        font-size: 20px;
     }
 
     #recherche-form input[type=text] {
         width: 100%;
-    }
-
-    #recherche-form button[type=submit] {
-        font-size: 18px;
-        font-weight: 700;
-        color: white;
-        border: solid 1px #0065FC;
-        background: #0065FC;
-        padding: 14px 16px 14px 16px;
-        border-radius: 0px 15px 15px 0px;
     }
 
     #recherche .cherch-txt {
@@ -811,12 +770,6 @@ footer div {
     }
 
 
-    main {
-        width: 100%;
-        min-width: 0;
-        /* padding: 10px; */
-    }
-
     article {
         padding: 20px;
     }
@@ -824,11 +777,6 @@ footer div {
 
 
 
-
-    .icon {
-        color: #0065FC;
-        font-size: 20px;
-    }
 
     #filtres {
         flex-wrap: wrap;
@@ -849,7 +797,6 @@ footer div {
     }
 
     .infos {
-        display: flex;
         align-items: flex-start;
         font-size: 15px;
         margin-bottom: 15px;
@@ -859,7 +806,6 @@ footer div {
     .info-icon {
         width: 35px;
         height: 25px;
-        border-radius: 60px;
         margin-right: 5px;
     }
     
@@ -912,18 +858,12 @@ footer div {
 
 
 
-
     .space-vertical {
         flex-direction: column;
         margin-bottom: 0px;
     }
 
     .cartes-horiz {
-        height: 135px;
-        background: white;
-        border-radius: 20px;
-        padding: 5px;
-        box-shadow: #D9D9D9 3px 3px 10px 2px;
         margin-bottom: 10px;
     }
 
@@ -946,18 +886,15 @@ footer div {
 
     .cartes-desc-horiz p {
         font-size: 13px;
-        font-weight: 400;
     }
 
 
 
     .activites-titre {
-        margin: 50px 0px 10px 0px;
         width: 50%;
     }
 
     .sec-activites {
-        width: 100%;
         flex-direction: column;
     }
 
@@ -981,7 +918,6 @@ footer div {
     .activites-box .activites-img-vertical {
         transform: scale(1.00);
         object-position: 0px -150px;
-        /* object-position: left top; */
     }
 
 
