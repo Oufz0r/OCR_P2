@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-html {
-    display: inline-block;
-}
+/* html {
+    margin: 0 auto;
+} */
 
 body {
-    display: block;
+    
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
     width: 1400px;
@@ -230,6 +230,7 @@ menu a:hover .blue-bar {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .sec-hebergements {
@@ -433,7 +434,7 @@ menu a:hover .blue-bar {
 
 
 .activites-titre {
-    margin: 50px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 .sec-activites {
