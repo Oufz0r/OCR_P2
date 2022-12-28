@@ -171,7 +171,7 @@ menu a:hover .blue-bar {
     color: #0065FC;
     font-size: 20px;
 }
-  
+
 #filtres button {
     padding: 12px 20px 12px 20px;
     border-radius: 60px;
@@ -535,10 +535,10 @@ footer div {
 
 
 /* VERSION TABLETTE */
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     html {
         height: auto;
-        width: auto;
+        width: 100%;
         padding: 0;
         margin: 0;
     }
@@ -552,6 +552,11 @@ footer div {
 
     header {
         width: 100%;
+    }
+
+    nav li {
+        text-align: right;
+        margin: 0;
     }
 
     main {
@@ -572,8 +577,10 @@ footer div {
     
     #filtres button {
         margin-left: 10px;
-        font-size: 16px;
+        font-size: 0.8em;
+        padding: 8px 12px 8px 12px;
     }
+
 
     .heb-pop {
         flex-direction: column;
@@ -593,11 +600,24 @@ footer div {
 
 
     .cartes-box {
+        /* margin: 0 0 25px 0; */
         justify-content: space-between;
     }
 
     .cartes {
-        width: 206px;
+        width: 180px;
+    }
+
+    .cartes-bg img {
+        transform: scale(1.20);
+    }
+
+    .cartes-desc h3 {
+        font-size: 14px;
+    }
+
+    .cartes-desc p {
+        font-size: 12px;
     }
 
 
@@ -610,7 +630,7 @@ footer div {
     }
 
     .cartes-horiz {
-        height: 135px;
+        height: 115px;
         background: white;
         border-radius: 20px;
         padding: 5px;
@@ -618,11 +638,11 @@ footer div {
     }
 
     .cartes-bg-horiz {
-        width: 90px;
+        width: 70px;
     }
 
     .cartes-bg-horiz-imgvertic {
-        width: 90px;
+        width: 70px;
     }
 
     .cartes-bg-horiz-imgvertic img {
@@ -630,12 +650,16 @@ footer div {
     }
 
     .cartes-desc-horiz {
-        width: 125px;
+        width: 110px;
         padding: 0px 0px 0px 8px;
     }
 
+    .cartes-desc-horiz h3 {
+        font-size: 15px;
+    }
+
     .cartes-desc-horiz p {
-        font-size: 13px;
+        font-size: 11px;
         font-weight: 400;
     }
 
@@ -643,12 +667,12 @@ footer div {
 
 
     .sec-activites {
-        width: 100%;
+        width: auto;
     }
 
     .activites-box {
-        width: 180px;
-        height: 270px;
+        width: 160px;
+        height: 230px;
     }
 
     .activites-box img {
@@ -670,6 +694,7 @@ footer div {
 
     .activites-name {
         padding: 5px 20px 5px 20px;
+        font-size: 15px;
         flex: 1;
         display: flex;
         align-items: center;
