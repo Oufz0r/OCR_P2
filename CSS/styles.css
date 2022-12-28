@@ -799,7 +799,7 @@ footer div {
 
     #filtres form {
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     
     #filtres button {
