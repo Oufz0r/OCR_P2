@@ -483,21 +483,15 @@ menu a:hover .blue-bar {
 
 
 
-.sec-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    bottom: 0px;
-}
+
 
 footer {
     display: flex;
     flex-direction: row;
-    width: 100%;
     background: #F2F2F2;
-    justify-content: space-between;
+    justify-content: center;
     padding: 45px 70px 45px 70px;
-    margin: 0px;
+    margin: 60px 0px 0 0;
 }
 
 footer h3 {
@@ -703,7 +697,11 @@ footer div {
 
 
     footer {
-        width: 100%;
+        font-size: 12px;
+    }
+
+    footer h3 {
+        font-size: 16px;
     }
 
 }
