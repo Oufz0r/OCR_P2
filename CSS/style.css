@@ -9,7 +9,7 @@ body {
     
     font-family: 'Raleway', sans-serif;
     margin: 0 auto;
-    width: 1400px;
+    max-width: 1400px;
     padding: 44px 55px 0px 55px;
 }
 
@@ -812,7 +812,9 @@ footer div {
     }
 
 
-
+    h1 {
+        font-size: 23px;
+    }
 
     #recherche-form .icon-gps {
         width: 80px;
@@ -850,12 +852,19 @@ footer div {
     
     #filtres button {
         display: flex;
-        font-size: 11px;
-        width: 155px;
+        /* font-size: 11px; */
+        font-size: 0.7em;
+        width: 48%;
         padding: 10px 0px 10px 10px;
         align-items: center;
         margin: 10px 0px 10px 0px;
     }
+
+    .icon {
+        color: #0065FC;
+        font-size: 1.8em;
+    }
+
 
     .infos {
         align-items: flex-start;
