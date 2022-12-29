@@ -595,16 +595,21 @@ footer div {
 
 
     .cartes-box {
-        /* margin: 0 0 25px 0; */
+        margin-bottom: 25px;
         justify-content: space-between;
     }
 
     .cartes {
         width: 180px;
+        height: auto;
+    }
+
+    .cartes-bg {
+        height: 80px;
     }
 
     .cartes-bg img {
-        transform: scale(1.20);
+        transform: scale(1.00);
     }
 
     .cartes-desc h3 {
@@ -612,7 +617,8 @@ footer div {
     }
 
     .cartes-desc p {
-        font-size: 12px;
+        font-size: 13px;
+        margin: 5px 0 5px 0;
     }
 
 
