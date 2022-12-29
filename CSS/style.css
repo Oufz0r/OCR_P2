@@ -288,7 +288,7 @@ h1 {
 }
 
 .cartes {
-    width: 236px;
+    width: 246px;
     height: 199px;
     background: white;
     border-radius: 20px;
@@ -831,7 +831,7 @@ footer div {
     }
 
 
-    article {
+    section {
         padding: 20px;
     }
 
@@ -870,6 +870,7 @@ footer div {
     
 
     .heb-pop {
+        padding: 0;
         flex-direction: column;
     }
 
@@ -982,7 +983,7 @@ footer div {
 
 
     footer {
-        width: 100%;
+        width: auto;
         flex-direction: column;
     }
 
