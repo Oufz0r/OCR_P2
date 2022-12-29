@@ -388,7 +388,6 @@ h1 {
 .cartes-bg-horiz {
     display: flex;
     width: 137px;
-    height: 100%;
     border-radius: 15px 0px 0px 15px;
     overflow: hidden;
     justify-content: center;
@@ -399,17 +398,14 @@ h1 {
     height: 100%;
 }
 
-.cartes-bg-horiz-imgvertic {
-    display: flex;
-    width: 137px;
-    border-radius: 15px 0px 0px 15px;
-    overflow: hidden;
-    align-items: center;
-}
-
-.cartes-bg-horiz-imgvertic .imgvertic {
+.cartes-bg-horiz .imgverticale {
+    height: auto;
     width: 100%;
 }
+
+
+
+
 
 .cartes-desc-horiz {
     position: relative;
@@ -657,11 +653,9 @@ footer div {
         width: 70px;
     }
 
-    .cartes-bg-horiz-imgvertic {
-        width: 70px;
-    }
-
-    .cartes-bg-horiz-imgvertic img {
+    .cartes-bg-horiz .imgverticale {
+        height: auto;
+        width: 100%;
         transform: scale(1.15);
     }
 
@@ -944,14 +938,6 @@ footer div {
         width: 117px;
     }
 
-    .cartes-bg-horiz-imgvertic {
-        width: 117px;
-    }
-
-    .cartes-bg-horiz-imgvertic img {
-        transform: scale(1.15);
-    }
-
     .cartes-desc-horiz {
         width: 55%;
         padding: 0px 0px 0px 8px;
@@ -983,13 +969,13 @@ footer div {
 
     .activites-box img {
         object-position: 0px -25px;
-        transform: scale(1);
+        transform: scale(1.00);
         width: 100%;
         height: auto;
     }
 
     .activites-box .activites-img-vertical {
-        transform: scale(1.00);
+        width: 100%;
         object-position: 0px -150px;
     }
 
