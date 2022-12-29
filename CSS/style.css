@@ -18,41 +18,12 @@ a {
     text-decoration: none;
 }
 
-main {
-    width: 100%;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     height: 80px;
     width: 100%;
 }
-
-.col {
-    display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-h1 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 0px;
-}
-
-.titre-h2 {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-
-
-
 
 #logo img {
     width: 61px;
@@ -99,6 +70,39 @@ menu a:hover .blue-bar {
 
 
 
+/* ========== Le corps du site avec main ========== */
+
+main {
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.titre-h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* ========== Partie avec formulaire de recherche et filtres ========== */
 
 #recherche {
     margin: 0;
@@ -166,8 +170,6 @@ menu a:hover .blue-bar {
     font-size: 18px;
 }
 
-/* Gestion des Boutons Filtres */
-
 .icon {
     color: #0065FC;
     font-size: 20px;
@@ -226,7 +228,7 @@ menu a:hover .blue-bar {
 
 
 
-
+/* ========== Partie hebergements et populaires ========== */
 
 .heb-pop {
     display: flex;
@@ -436,6 +438,10 @@ menu a:hover .blue-bar {
 
 
 
+
+
+/* ========== Partie activités ========== */
+
 .activites-titre {
     margin: 0px 0px 10px 0px;
 }
@@ -485,6 +491,7 @@ menu a:hover .blue-bar {
 
 
 
+/* ========== Footer ========== */
 
 footer {
     display: flex;
@@ -529,7 +536,11 @@ footer div {
 
 
 
-/* VERSION TABLETTE */
+
+
+
+/* ========== Version Tablette ========== */
+
 @media (min-width: 768px) and (max-width: 991px) {
     html {
         height: auto;
@@ -734,7 +745,11 @@ footer div {
 
 
 
-/* VERSION MOBILE */
+
+
+
+/* ========== Version Mobile ========== */
+
 @media (max-width: 767px) {
 
     html {
