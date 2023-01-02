@@ -292,6 +292,8 @@ h1 {
 }
 
 .cartes {
+    display: flex;
+    flex-direction: column;
     width: 246px;
     height: 199px;
     background: white;
@@ -378,6 +380,8 @@ h1 {
 }
 
 .cartes-horiz {
+    display: flex;
+    flex-direction: row;
     height: 135px;
     background: white;
     border-radius: 20px;
