@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -151,7 +155,7 @@ h1 {
     border-radius: 0px 15px 15px 0px;
 }
 
-#recherche .cherch-loupe {
+#recherche .cherch-txt-loupe > i {
     display: none;
 }
 
@@ -242,15 +246,23 @@ h1 {
     margin-bottom: 50px;
 }
 
+.heb-pop a {
+    width: 31%;
+}
+
+.heb-pop .sec-populaires a {
+    width: 100%;
+}
+
 .sec-hebergements {
-    width: 840px;
+    width: 63%;
     border-radius: 20px;
     padding: 40px 40px 20px 40px;
     background: #F2F2F2;
 }
 
 .sec-populaires {
-    width: 340px;
+    width: 33%;
     border-radius: 20px;
     padding: 40px 40px 0px 40px;
     background: #F2F2F2;
@@ -283,6 +295,7 @@ h1 {
 
 
 
+
 /* Cartes verticales*/
 .cartes-box {
     display: flex;
@@ -294,8 +307,9 @@ h1 {
 .cartes {
     display: flex;
     flex-direction: column;
-    width: 246px;
-    height: 199px;
+    /* width: 246px; */
+    /* width: 100%; */
+    height: 100%;
     background: white;
     border-radius: 20px;
     padding: 5px;
@@ -309,33 +323,36 @@ h1 {
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
     align-items: center;
+    justify-content: center;
 }
 
 .cartes-bg img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cartes-desc {
     width: auto;
-    height: auto;
+    height: 80px;
     padding-left: 10px;
     background: white;
 }
 
 .cartes-desc h3 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     margin: 10px 0px 0px 0px;
 }
 
 .cartes-desc p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
-    margin: 8px 0px 0px 0px;
+    margin: 4px 0px 0px 0px;
 }
 
 .cartes-desc .stars {
-    font-size: 12px;
+    font-size: 10px;
     word-spacing: -3px;
 }
 
@@ -351,8 +368,9 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+    align-items: flex-start;
+    height: 10%;
+    /* margin-bottom: 30px; */
 }
 
 .titre-pop h2 {
@@ -375,18 +393,20 @@ h1 {
 .space-vertical {
     display: flex;
     flex-direction: column;
-    height: 85%;
     justify-content: space-between;
+    height: 87%;
 }
 
 .cartes-horiz {
     display: flex;
     flex-direction: row;
-    height: 135px;
+    min-height: 135px;
+    height: 32%;
     background: white;
     border-radius: 20px;
     padding: 5px;
     box-shadow: #D9D9D9 3px 3px 10px 2px;
+    /* margin-bottom: 40px; */
 }
 
 .cartes-bg-horiz {
@@ -399,42 +419,35 @@ h1 {
 }
 
 .cartes-bg-horiz img {
-    height: 100%;
-}
-
-.cartes-bg-horiz .imgverticale {
-    height: auto;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-
-
-
 
 .cartes-desc-horiz {
     position: relative;
     width: 169px;
     height: auto;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 5px 0px 10px;
     background: white;
 }
 
 .cartes-desc-horiz h3 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 .cartes-desc-horiz p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
-    margin: 8px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
 }
 
 .cartes-desc-horiz .stars {
     position: absolute;
     bottom: 5px;
-    font-size: 12px;
+    font-size: 10px;
     word-spacing: -3px;
 }
 
@@ -457,10 +470,14 @@ h1 {
     justify-content: space-between;
 }
 
+.sec-activites a {
+    width: 22%;
+}
+
 .activites-box {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     height: 440px;
     border-radius: 20px;
     box-shadow: #D9D9D9 0px 3px 10px;
@@ -475,8 +492,12 @@ h1 {
 }
 
 .activites-name {
-    padding: 20px;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    max-height: 60px;
+    min-height: 60px;
+    font-size: 15px;
     font-weight: 700;
     background: white;
 }
@@ -514,7 +535,7 @@ footer h3 {
 }
 
 footer div {
-    width: 100%;
+    width: 33%;
 }
 
 
@@ -567,6 +588,8 @@ footer div {
         margin-left: 10px;
         font-size: 0.8em;
         padding: 8px 12px 8px 12px;
+        display: flex;
+        align-items: center;
     }
 
 
@@ -593,7 +616,8 @@ footer div {
     }
 
     .cartes {
-        width: 180px;
+        /* width: 180px; */
+        width: 100%;
         height: auto;
     }
 
@@ -621,10 +645,13 @@ footer div {
     .space-vertical {
         flex-direction: row;
         margin-bottom: 50px;
+        justify-content: space-between;
+        padding-top: 30px;
     }
 
     .cartes-horiz {
         height: 115px;
+        width: 95%;
         background: white;
         border-radius: 20px;
         padding: 5px;
@@ -632,17 +659,20 @@ footer div {
     }
 
     .cartes-bg-horiz {
-        width: 70px;
+        /* width: 70px; */
+        width: 35%;
     }
 
     .cartes-bg-horiz .imgverticale {
-        height: auto;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         transform: scale(1.15);
     }
 
     .cartes-desc-horiz {
-        width: 110px;
+        /* width: 110px; */
+        width: 63%;
         padding: 0px 0px 0px 8px;
     }
 
@@ -804,13 +834,13 @@ footer div {
         width: 100%;
     }
 
-    #recherche .cherch-txt {
-        display: none;
-    }
+    #recherche .cherch-txt-loupe > i {
+    display: inline;
+}
 
-    #recherche .cherch-loupe {
-        display: inline;
-    }
+    #recherche .cherch-txt-loupe > span {
+    display: none;
+}
 
 
     section {
@@ -822,18 +852,23 @@ footer div {
 
 
     #filtres {
-        flex-wrap: wrap;
+        display: block;
     }
 
     #filtres form {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    #filtres h3 {
+        display: block;
+        margin:0;
+    }
     
     #filtres button {
         display: flex;
         /* font-size: 11px; */
-        font-size: 0.7em;
+        font-size: 0.8em;
         width: 48%;
         padding: 10px 0px 10px 10px;
         align-items: center;
@@ -873,10 +908,6 @@ footer div {
         padding: 20px;
     }
 
-    .sec-hebergements .cartes-box {
-        margin: 0;
-    }
-
     .sec-hebergements .more {
         display:none;
     }
@@ -895,25 +926,29 @@ footer div {
     .cartes-box {
         flex-direction: column;
         align-items: center;
-        width: auto;
+        width: 100%;
+    }
+
+    .cartes-box a {
+        width: 100%;
     }
 
     .cartes {
-        width: auto;
+        width: 100%;
         margin-bottom: 10px;
     }
-
 
 
 
 
     .space-vertical {
         flex-direction: column;
-        margin-bottom: 0px;
+        margin: 30px 0 20px 0;
     }
 
     .cartes-horiz {
         margin-bottom: 10px;
+        height: 149px;
     }
 
     .cartes-bg-horiz {
@@ -932,11 +967,15 @@ footer div {
 
 
     .activites-titre {
-        width: 50%;
+        width: 100%;
     }
 
     .sec-activites {
         flex-direction: column;
+    }
+
+    .sec-activites a {
+        width: 100%;
     }
 
     .activites-box {
@@ -953,7 +992,8 @@ footer div {
         object-position: 0px -25px;
         transform: scale(1.00);
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
     }
 
     .activites-box .activites-img-vertical {
