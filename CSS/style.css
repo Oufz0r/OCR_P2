@@ -183,7 +183,7 @@ h1 {
 #filtres form {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 70%;
 }
 
 #filtres button {
