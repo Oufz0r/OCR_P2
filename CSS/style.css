@@ -193,7 +193,7 @@ h1 {
     background: white;
     border-color: #D9D9D9;
     border-style: solid;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
     /* margin-left: 50px; */
@@ -590,6 +590,10 @@ footer div {
         color: #0065FC;
         font-size: 20px;
     }
+
+    #filtres form {
+        width: 100%;
+    }
     
     #filtres button {
         margin-left: 10px;
@@ -865,6 +869,7 @@ footer div {
     #filtres form {
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 100%;
     }
 
     #filtres h3 {
